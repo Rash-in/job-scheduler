@@ -30,3 +30,4 @@ if __name__ == "__main__":
             time.sleep(2)
     except(KeyboardInterrupt, SystemExit):
         scheduler.shutdown()
+        sys.exit("App quit on error.")
