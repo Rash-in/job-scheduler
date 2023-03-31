@@ -3,7 +3,7 @@ Daemon to start looping event Scheduler and print alive every 2 seconds.
 """
 import sys, time
 from apscheduler.schedulers.background import BackgroundScheduler
-from config.app import app_config
+from config.app_config import app_config
 from loguru import logger
 from jobs.ping import ping
 
