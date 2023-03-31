@@ -19,6 +19,7 @@ parser = argparse.ArgumentParser(
 
 def main():
     load_dotenv(dotenv_path)
+    print('Press Ctrl+{0} to exit'.format('Break' if os.name == 'nt' else 'C'))
     os.system(f". {activate_path} && python -B {app_path} >&1")
 
 if __name__ == "__main__":

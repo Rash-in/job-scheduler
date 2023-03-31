@@ -21,4 +21,4 @@ RUN pip install -r /app/requirements.txt
 USER 1001
 
 # Command to start app split by space
-CMD ["python3", "/app/main.py"]
+CMD ["python3", "-B", "/app/main.py"]
